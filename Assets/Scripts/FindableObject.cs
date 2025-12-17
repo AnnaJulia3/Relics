@@ -17,13 +17,16 @@ public class FindableObject : MonoBehaviour
 
     objectImageID = "imgRef" + nameObj;
 
-    // Feedback:Marca o texto como encontrado
+    // Feedback: Marca o texto como encontrado
     UnderlineText();
 
     // Feedback visual 
     OnObjectFound();
 
-    //Desativa a interação com o botão, mantém imagem
+    // Incrementa o contador global
+    GlobalCounter.Instance.IncrementCount();
+
+    //Desativa a interação, mantém imagem
     this.GameObject().GetComponent<UnityEngine.UI.Button>().interactable = false;
   }
 
