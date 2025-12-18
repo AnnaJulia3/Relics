@@ -46,7 +46,7 @@ public class GlobalCounter : MonoBehaviour
     if (count >= 7)
     {
       //espera 1 segundo antes de mostrar o canvas de cena completa
-      Invoke("SceneCompleted", 1.5f);
+      Invoke("SceneCompleted", 1f);
     }
   }
 
