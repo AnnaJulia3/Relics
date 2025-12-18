@@ -80,7 +80,8 @@ public class TimerController : MonoBehaviour
   {
     isTimerRunning = false;
     Debug.Log("Temporizador finalizado!");
-    // Adicione aqui a lógica do que acontece quando o tempo acaba
+    // Tela de fim de jogo
+    GlobalCounter.Instance.SceneGameOver();
   }
 
   /// <summary>
