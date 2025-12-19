@@ -1316,9 +1316,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 823632839}
-        m_TargetAssemblyTypeName: Load1, Assembly-CSharp
-        m_MethodName: load1
+      - m_Target: {fileID: 655548240}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: instructions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

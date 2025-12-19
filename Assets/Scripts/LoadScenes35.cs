@@ -12,5 +12,9 @@ public class SceneLoader : MonoBehaviour
     SceneManager.LoadScene("Level5");
   }
 
+  public void instructions()
+  {
+    SceneManager.LoadScene("Instructions");
+  }
 
 }
