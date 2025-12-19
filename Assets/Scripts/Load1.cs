@@ -5,6 +5,6 @@ public class Load1 : MonoBehaviour
 {
     public void load1()
     {
-        SceneManager.LoadScene("3Lv1FindObjetc");
+        SceneManager.LoadScene("Level1");
     }
 }
