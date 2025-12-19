@@ -27,17 +27,8 @@ public class GlobalCounter : MonoBehaviour
     canvasFinish = GameObject.Find("CanvasFinish");
     if (canvasFinish != null) canvasFinish.SetActive(false);
 
-    // Implementa o padrão Singleton
-    if (Instance == null)
-    {
-      Instance = this;
-      DontDestroyOnLoad(gameObject);
-    }
-    else
-    {
-      Destroy(gameObject);
-    }
-
+    Instance = this;
+    ResetCounter();
   }
 
   public void IncrementCount()
@@ -140,5 +131,10 @@ public class GlobalCounter : MonoBehaviour
     {
       Debug.LogWarning("AudioSource objeto não carregado!");
     }
+  }
+
+  public void ResetCounter()
+  {
+    count = 0;
   }
 }
